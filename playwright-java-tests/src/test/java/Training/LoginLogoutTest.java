@@ -15,8 +15,6 @@ public class LoginLogoutTest {
         {
             page.navigate("https://www.saucedemo.com/v1/index.html");
 
-            page.pause();
-
             String title = page.title();
             PlaywrightAssertions.assertThat(page).hasTitle("Swag Labs");
             System.out.println("The Title Is " + title);
